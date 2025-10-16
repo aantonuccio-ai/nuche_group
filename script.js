@@ -189,8 +189,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 statNumbers.forEach(stat => {
                     const text = stat.textContent;
-                    if (text.includes('25')) {
-                        animateValue(stat, 0, 25, 1500);
+                    if (text.includes('35')) {
+                        animateValue(stat, 0, 35, 1500);
                     } else if (text.includes('100')) {
                         animateValue(stat, 0, 100, 2000);
                     } else if (text.includes('10')) {
