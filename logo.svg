@@ -1,0 +1,35 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern geometric design with "N" shape -->
+  <defs>
+    <linearGradient id="gradientPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00D4FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradientAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFB800;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#gradientPrimary)" opacity="0.1"/>
+
+  <!-- Stylized "N" with modern geometric design -->
+  <path d="M 50 140 L 50 60 L 65 60 L 120 115 L 120 60 L 135 60 L 135 140 L 120 140 L 65 85 L 65 140 Z"
+        fill="url(#gradientPrimary)"
+        stroke="url(#gradientAccent)"
+        stroke-width="2"/>
+
+  <!-- Accent geometric element - connecting line -->
+  <path d="M 145 80 L 160 80 L 160 120 L 145 120"
+        stroke="url(#gradientAccent)"
+        stroke-width="4"
+        fill="none"
+        stroke-linecap="round"/>
+
+  <!-- Text -->
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="16" font-weight="700"
+        fill="url(#gradientPrimary)" text-anchor="middle" letter-spacing="2">
+    THE NUCHE GROUP
+  </text>
+</svg>
