@@ -96,42 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Contact form handling
-    const contactForm = document.getElementById('contactForm');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            // Get form data
-            const formData = new FormData(contactForm);
-            const data = Object.fromEntries(formData);
-
-            // Create mailto link with form data
-            const subject = encodeURIComponent(`Inquiry from ${data.name}`);
-            const body = encodeURIComponent(
-                `Name: ${data.name}\n` +
-                `Email: ${data.email}\n` +
-                `Company: ${data.company || 'Not provided'}\n\n` +
-                `Message:\n${data.message}`
-            );
-
-            // Open email client
-            window.location.href = `mailto:anthony@antonuccio.com?subject=${subject}&body=${body}`;
-
-            // Optional: Show confirmation message
-            const button = contactForm.querySelector('button[type="submit"]');
-            const originalText = button.textContent;
-            button.textContent = 'Opening email client...';
-            button.disabled = true;
-
-            setTimeout(() => {
-                button.textContent = originalText;
-                button.disabled = false;
-                contactForm.reset();
-            }, 2000);
-        });
-    }
 
     // Parallax effect for hero background
     window.addEventListener('scroll', () => {
