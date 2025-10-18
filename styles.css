@@ -69,12 +69,13 @@ body {
 }
 
 .logo img {
-    height: 112px;
+    height: 60px;
     transition: height 0.3s ease;
+    display: block;
 }
 
 .nav.scrolled .logo img {
-    height: 90px;
+    height: 50px;
 }
 
 .nav-toggle {
@@ -726,6 +727,18 @@ section {
 
 /* Responsive Design */
 @media (max-width: 968px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .nav.scrolled .logo img {
+        height: 40px;
+    }
+
     .nav-menu {
         position: fixed;
         top: 70px;
@@ -749,6 +762,7 @@ section {
 
     .nav-toggle {
         display: flex;
+        align-items: center;
     }
 
     .services-grid {
